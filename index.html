@@ -13,6 +13,9 @@
     <!--==================== CSS ====================-->
     <link rel="stylesheet" href="assets/css/styles.css" />
 
+    <!--==================== ANIMATE CSS ====================-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
     <title>Catur Portfolio</title>
   </head>
   <body>
@@ -59,7 +62,7 @@
       <section class="home section" id="home">
         <div class="home__container container grid">
           <div class="home__content grid">
-            <div class="home__social">
+            <div class="home__social animate__animated animate__fadeInLeftBig animate__delay-1s">
               <a href="https://www.linkedin.com/in/catursptr0/" target="_blank" class="home__social-icon">
                 <i class="uil uil-linkedin-alt"></i>
               </a>
@@ -73,7 +76,7 @@
               </a>
             </div>
 
-            <div class="home__img">
+            <div class="home__img animate__animated animate__fadeInDown animate__delay-2s">
               <svg class="home__blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                 <mask id="mask0" mask-type="alpha">
                   <path d="M0 0H200V178H60C26.8629 178 0 151.137 0 118V0Z" />
@@ -87,14 +90,14 @@
             </div>
 
             <div class="home__data">
-              <h1 class="home__title">Hi, I'am Catur</h1>
-              <h3 class="home__subtitle">UI/UX Designer & Web Developer</h3>
-              <p class="home__description">Final year student at Gunadarma University. Highly interested in web/mobile design and development knowledge, produce quality work.</p>
-              <a href="#contact" class="button button--flex"> Contact Me <i class="uil uil-message button__icon"></i> </a>
+              <h1 class="home__title animate__animated animate__fadeInUp animate__delay-1s">Hi, I'am Catur</h1>
+              <h3 class="home__subtitle animate__animated animate__fadeInUp animate__delay-1s">UI/UX Designer & Web Developer</h3>
+              <p class="home__description animate__animated animate__fadeInUp animate__delay-1s">Fresh Graduate student at Gunadarma University. Highly interested in web/mobile design and development knowledge, produce quality work.</p>
+              <a href="#contact" class="button button--flex home__button animate__animated animate__fadeInUp animate__delay-1s"> Contact Me <i class="uil uil-message button__icon"></i> </a>
             </div>
           </div>
 
-          <div class="home__scroll">
+          <div class="home__scroll animate__animated animate__fadeInUp animate__delay-2s">
             <a href="#about" class="home__scroll-button button--flex">
               <i class="uil uil-mouse-alt home__scroll-mouse"></i>
               <span class="home__scroll-name">Scroll down</span>
@@ -106,17 +109,19 @@
 
       <!--==================== ABOUT ====================-->
       <section class="about section" id="about">
-        <h2 class="section__title">About Me</h2>
-        <span class="section__subtitle">My introduction</span>
+        <h2 class="section__title animate__animated animate__fadeInUp animate__delay-2s">About Me</h2>
+        <span class="section__subtitle animate__animated animate__fadeInUp animate__delay-2s">My introduction</span>
 
         <div class="about__container container grid">
-          <img src="assets/img/about.jpg" alt="" class="about__img" />
+          <img src="assets/img/about.jpg" alt="" class="about__img animate__animated animate__fadeInLeft animate__delay-2s" />
 
           <div class="about__data">
-            <p class="about__description">Final year student majoring in informatics engineering. Ui / Ux designer, with spirit of learning and web/mobile development knowledge, delivering quality work.</p>
+            <p class="about__description animate__animated animate__fadeInUp animate__delay-1s">
+              Fresh Graduate student majoring in informatics engineering. Ui / Ux designer, with spirit of learning and web/mobile development knowledge, delivering quality work.
+            </p>
 
             <div class="about__info">
-              <div>
+              <div class="about__info__one animate__animated animate__fadeInRight animate__delay-1s">
                 <span class="about__info-title">08+</span>
                 <span class="about__info-name"
                   >Website <br />
@@ -124,7 +129,7 @@
                 >
               </div>
 
-              <div>
+              <div class="about__info__two animate__animated animate__fadeInRight animate__delay-1s">
                 <span class="about__info-title">02</span>
                 <span class="about__info-name"
                   >Android <br />
@@ -132,7 +137,7 @@
                 >
               </div>
 
-              <div>
+              <div class="about__info__three animate__animated animate__fadeInRight animate__delay-1s">
                 <span class="about__info-title">02</span>
                 <span class="about__info-name"
                   >Ui/Ux <br />
@@ -141,7 +146,7 @@
               </div>
             </div>
 
-            <div class="about__buttons">
+            <div class="about__buttons animate__animated animate__fadeInUp animate__delay-1s">
               <a download="" href="assets/pdf/Catur-Cv.pdf" target="blank" class="button button-flex"> Download CV<i class="uil uil-download-alt button__icon"></i> </a>
             </div>
           </div>
@@ -150,8 +155,8 @@
 
       <!--==================== PORTFOLIO ====================-->
       <section class="portfolio section" id="portfolio">
-        <h2 class="section__title">Portfolio</h2>
-        <span class="section__subtitle">Most recent work</span>
+        <h2 class="section__title animate__animated animate__fadeInUp animate__delay-2s">Portfolio</h2>
+        <span class="section__subtitle animate__animated animate__fadeInUp animate__delay-2s">Most recent work</span>
 
         <!--==================== PORTFOLIO 1 ====================-->
         <div class="portfolio__container container">
@@ -440,10 +445,13 @@
 
           <ul class="footer__links">
             <li>
-              <a href="#services" class="footer__link">Services</a>
+              <a href="#about" class="footer__link">About</a>
             </li>
             <li>
               <a href="#portfolio" class="footer__link">Portfolio</a>
+            </li>
+            <li>
+              <a href="#skill" class="footer__link">Skill</a>
             </li>
             <li>
               <a href="#contact" class="footer__link">Contactme</a>

@@ -29,6 +29,19 @@ function linkAction() {
 }
 navLink.forEach((n) => n.addEventListener("click", linkAction));
 
+/*==================== ANIMATE HEADER ONLY WIDE SCREEN ====================*/
+function animateHeader(x) {
+  const navbar = document.querySelector("#header");
+  if (x.matches) {
+    navbar.classList.add("animate__animated", "animate__fadeInDown");
+  } else {
+    navbar.classList.remove("animate__animated", "animate__fadeInDown");
+  }
+}
+var x = window.matchMedia("(min-width: 768px)");
+animateHeader(x);
+x.addListener(animateHeader);
+
 /*==================== ACCORDION SKILLS ====================*/
 const skillsContent = document.getElementsByClassName("skills__content"),
   skillsHeader = document.querySelectorAll(".skills__header");

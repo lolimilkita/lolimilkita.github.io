@@ -313,6 +313,7 @@ img {
 
 .home__title {
   font-size: var(--big-font-size);
+  --animate-delay: 0.5s;
 }
 
 .home__subtitle {
@@ -320,10 +321,15 @@ img {
   color: var(--text-color);
   font-weight: var(--font-medium);
   margin-bottom: var(--mb-0-75);
+  --animate-delay: 0.8s;
 }
 
 .home__description {
   margin-bottom: var(--mb-2);
+}
+
+.home__button {
+  --animate-delay: 1.2s;
 }
 
 .home__scroll {
@@ -414,12 +420,25 @@ img {
 .about__description {
   text-align: center;
   margin-bottom: var(--mb-2-5);
+  --animate-delay: 1.2s;
 }
 
 .about__info {
   display: flex;
   justify-content: space-evenly;
   margin-bottom: var(--mb-2-5);
+}
+
+.about__info__one {
+  --animate-delay: 2.4s;
+}
+
+.about__info__two {
+  --animate-delay: 2.6s;
+}
+
+.about__info__three {
+  --animate-delay: 2.8s;
 }
 
 .about__info-tile {
@@ -441,6 +460,7 @@ img {
 .about__buttons {
   display: flex;
   justify-content: center;
+  --animate-delay: 3s;
 }
 
 /*==================== SKILLS ====================*/
@@ -580,6 +600,11 @@ img {
   width: 265px;
   border-radius: 0.5rem;
   justify-self: center;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.portfolio__img:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
 .portfolio__title {
