@@ -38,7 +38,7 @@ function animateHeader(x) {
     navbar.classList.remove("animate__animated", "animate__fadeInDown");
   }
 }
-var x = window.matchMedia("(min-width: 768px)");
+let x = window.matchMedia("(min-width: 768px)");
 animateHeader(x);
 x.addListener(animateHeader);
 
@@ -74,6 +74,35 @@ skillsHeader.forEach((el) => {
 //         clickable: true,
 //     },
 // })
+
+/*==================== PORTFOLIO SCROLL  ====================*/
+window.addEventListener("scroll", () => {
+  let screenPosition = window.innerHeight / 1.2;
+
+  let content1 = document.querySelector(".aos__one");
+  let content1Position = content1.getBoundingClientRect().top;
+  if (content1Position < screenPosition) {
+    content1.classList.add("active");
+  } else {
+    content1.classList.remove("active");
+  }
+
+  const content2 = document.querySelector(".aos__two");
+  let content2Position = content2.getBoundingClientRect().top;
+  if (content2Position < screenPosition) {
+    content2.classList.add("active");
+  } else {
+    content2.classList.remove("active");
+  }
+
+  const content3 = document.querySelector(".aos__three");
+  let content3Position = content3.getBoundingClientRect().top;
+  if (content3Position < screenPosition) {
+    content3.classList.add("active");
+  } else {
+    content3.classList.remove("active");
+  }
+});
 
 /*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
 const sections = document.querySelectorAll("section[id]");

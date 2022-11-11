@@ -600,8 +600,40 @@ img {
   width: 265px;
   border-radius: 0.5rem;
   justify-self: center;
-  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
+
+/*-------------- ANIMATE ON SCROLL --------------*/
+
+.aos__one {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-20%);
+  transition: all 1s;
+}
+
+.aos__two {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-20%);
+  transition: all 1s;
+  transition-delay: 100ms;
+}
+
+.aos__three {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-20%);
+  transition: all 1s;
+  transition-delay: 200ms;
+}
+
+.active {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+
+/*-------------- ANIMATE ON SCROLL --------------*/
 
 .portfolio__img:hover {
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
