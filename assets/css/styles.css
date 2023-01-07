@@ -555,27 +555,15 @@ img {
 
 /*-------------- ANIMATE ON SCROLL --------------*/
 
-.aos__one {
-  opacity: 0;
-  filter: blur(5px);
-  transform: translateX(-20%);
-  transition: all 1s;
-}
-
-.aos__two {
+.aos__one,
+.aos__two,
+.aos__three,
+.aos__four {
   opacity: 0;
   filter: blur(5px);
   transform: translateX(-20%);
   transition: all 1s;
   transition-delay: 100ms;
-}
-
-.aos__three {
-  opacity: 0;
-  filter: blur(5px);
-  transform: translateX(-20%);
-  transition: all 1s;
-  transition-delay: 200ms;
 }
 
 .active {
@@ -925,7 +913,7 @@ img {
   }
 
   .portfolio__img {
-    width: 320px;
+    width: 420px;
   }
   .portfolio__content {
     align-items: center;
@@ -964,8 +952,11 @@ img {
     transform: translateX(-6rem);
   }
 
+  .portfolio__img {
+    width: 420px;
+  }
   .portfolio__content {
-    column-gap: 5rem;
+    column-gap: 2rem;
   }
   .swiper-portfolio-icon {
     font-size: 3.5rem;

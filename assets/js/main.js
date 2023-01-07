@@ -102,6 +102,14 @@ window.addEventListener("scroll", () => {
   } else {
     content3.classList.remove("active");
   }
+
+  const content4 = document.querySelector(".aos__four");
+  let content4Position = content4.getBoundingClientRect().top;
+  if (content4Position < screenPosition) {
+    content4.classList.add("active");
+  } else {
+    content4.classList.remove("active");
+  }
 });
 
 /*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
